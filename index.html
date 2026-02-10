@@ -1,91 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>I'm Sorry 🌻</title>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Babieee</title>
+    <style>
+        /* Importing cute fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
 
-<style>
-  body{
-    margin:0;
-    padding:20px;
-    background:#fff8f0;
-    font-family:"Inter",sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-  }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden; 
+        }
 
-  .container{
-    max-width:800px;
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 10px 35px rgba(0,0,0,0.1);
-    border:3px solid #ffd6df;
-    text-align:center;
-  }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 85%;
+            width: 500px; /* Made slightly wider for your text */
+            position: relative;
+            z-index: 10;
+        }
 
-  h1{
-    font-family:"Pacifico",cursive;
-    font-size:42px;
-    color:#ff4f7d;
-    margin-bottom:10px;
-  }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff6b81;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
 
-  .heart{
-    font-size:58px;
-    animation: heartbeat 1.4s infinite;
-    margin:10px 0 25px;
-  }
+        .message-text {
+            color: #444;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
 
-  @keyframes heartbeat{
-    0%{transform:scale(1)}
-    50%{transform:scale(1.25)}
-    100%{transform:scale(1)}
-  }
+        /* Highlight the promise */
+        .promise {
+            color: #ff4757;
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+        }
 
-  .msg{
-    background:#fff3f6;
-    padding:22px;
-    border-radius:14px;
-    font-size:19px;
-    line-height:1.6;
-    text-align:left;
-    border-left:6px solid #ff7aa0;
-  }
+        .gif-container img {
+            width: 140px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
 
-  footer{
-    margin-top:20px;
-    font-size:14px;
-    color:#777;
-  }
-</style>
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+
+        .yes-btn {
+            background-color: #2ed573;
+            color: white;
+            box-shadow: 0 4px 15px rgba(46, 213, 115, 0.3);
+        }
+
+        .yes-btn:hover {
+            transform: scale(1.05);
+            background-color: #26af61;
+        }
+
+        .no-btn {
+            background-color: #ff4757;
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+            position: relative; 
+        }
+
+        /* Success Message Styling */
+        .success-message {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .hearts {
+            color: #ff6b81;
+            font-size: 2em;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
 </head>
-
 <body>
-<div class="container">
-  <h1>I'm Sorry 🌻</h1>
-  <div class="heart">❤️</div>
 
-  <p class="msg">
-    I'm sorrry my love, I'm sorry for missing the first month anniversary of the start of our relationship.
-    I genuinely feel dumb that I forgot about it. But it's just I was more focused on the dates 31st and 6th,
-    so this one just slipped my mind.<br><br>
+    <div class="container" id="mainCard">
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXdleHMycnZ5ZXZ1eDRrYmZ5YzRkZzR4aDJ4Y3Z6Z3Z4aDJ4Y3Z6ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/KxtjPgBHlUEYeLYPTi/giphy.gif" alt="Sad Bear">
+        </div>
 
-    But I'm reassuring you that it'll never happen again.🌻<br><br>
+        <h1>I'm So Sorry</h1>
+        
+        <div class="message-text">
+            I really really loveee you so muchh my babieee,<br> 
+            I loveee you so much more than anything.<br><br>
+            I might be annoying sometimes and sometimes I may be silent,<br>
+            But I'm trying my best.<br><br>
+            Please forgive me,<br>
+            <span class="promise">I promise I'll never keep my phone silent ever again.</span>
+        </div>
 
-    Also cheers to the first super good month of our relationship. For me it was the best month of this year,
-    and I believe and wish to have such amazing time with you forever.🌹<br><br>
+        <div class="btn-group">
+            <button class="yes-btn" onclick="acceptApology()">Yes, I forgive you</button>
+            <button class="no-btn" id="noBtn" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        </div>
+    </div>
 
-    I loveee youu my lovee.💗<br><br>
+    <div class="container success-message" id="successCard">
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3Z5c3o1Z3Z4aDJ4Y3Z6Z3Z4aDJ4Y3Z6Z3Z4aDJ4Y3Z6ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MDJ9IbxxvDUQM/giphy.gif" alt="Happy Cat">
+        </div>
+        <h1>Yay! ❤️</h1>
+        <p>Thank you my love! I missed you so much.</p>
+        <div class="hearts">
+            ❤️❤️❤️❤️❤️
+        </div>
+    </div>
 
-    Please maan jao😭 I'm meeting you after so many days and I don't wanna see you such ruthi ruthii.
-  </p>
+    <script>
+        const noBtn = document.getElementById('noBtn');
+        const mainCard = document.getElementById('mainCard');
+        const successCard = document.getElementById('successCard');
 
-  <footer>Made with love 🌻🌹</footer>
-</div>
+        // Function to move the "No" button
+        function moveButton() {
+            // Get the window dimensions
+            const maxWidth = window.innerWidth - noBtn.offsetWidth;
+            const maxHeight = window.innerHeight - noBtn.offsetHeight;
+
+            // Calculate random positions
+            const randomX = Math.floor(Math.random() * maxWidth);
+            const randomY = Math.floor(Math.random() * maxHeight);
+
+            // Apply new position (using fixed lets it break out of the card container)
+            noBtn.style.position = 'fixed'; 
+            noBtn.style.left = randomX + 'px';
+            noBtn.style.top = randomY + 'px';
+        }
+
+        // Handle Touch for mobile devices
+        noBtn.addEventListener('touchstart', function(e) {
+            e.preventDefault(); 
+            moveButton();
+        });
+
+        // Function for the "Yes" button
+        function acceptApology() {
+            mainCard.style.display = 'none';
+            successCard.style.display = 'flex';
+            document.body.style.backgroundImage = "linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)";
+        }
+    </script>
 </body>
 </html>
